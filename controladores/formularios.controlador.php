@@ -72,7 +72,7 @@ class ControladorFormularios
 
             if (is_array($respuesta)) {
                 if ($respuesta["email"] == $_POST["ingresoEmail"] && $respuesta["password"] == $EncriptarPassword) {
-            //RECAPTCHA
+            //RECAPTCHA FALLO INTENTOS
                 ModeloFormularios::mdlActualizarIntentosFallidos($tabla,0,$respuesta["token"]);
 
                     $_SESSION["validarIngreso"] = "ok";

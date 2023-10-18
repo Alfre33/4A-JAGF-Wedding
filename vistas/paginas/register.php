@@ -67,7 +67,18 @@
 
             echo '<div class="alert-success"> El usuario ha sido registrado correctamente</div>';
         }
+        if ($registro == "error") {
+            echo '<script>
+            if (window.history.replaceState){
+                window.history.replaceState(null, null, window.location.gref);
+            }
+            </script>';
+
+        echo '<div class="alert-danger"> Oh,no ocurrio un ERROR!! </div><br>
+        <div class="alert-danger"> No se aceptan carácteres especiales</div>';  
+        }
         ?>
+        <br>
         <button type="submit" class="btn btn-primary">Registrarse</button>
     </form>
 

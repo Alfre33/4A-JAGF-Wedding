@@ -50,6 +50,7 @@
         $ingreso = new ControladorFormularios();
         $ingreso->ctrIngreso();
         ?>
+        <br>
         <button type="submit" class="btn btn-primary">Ingresar</button>
     </form>
 <br>

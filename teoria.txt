@@ -1,0 +1,13 @@
+## XSS ##
+//SCRIPT MALICIOSOS//
+
+#<script>alert("Te hemos hakeado ponte en contacto con nosotros para ayudarte")</script>
+
+#<script>setInterval(function(){alert("Te hemos hakeado ponte en contacto con 
+nosotros para ayudarte")},1000)</script>
+
+##### CSRF ####
+TOKEN
+md5()
+
+Ataque SQL INYECTION
